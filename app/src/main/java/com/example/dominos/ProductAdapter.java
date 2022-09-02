@@ -55,8 +55,8 @@ public class ProductAdapter extends ArrayAdapter<Product> {
 
         Spinner spinnerSizes = v.findViewById(R.id.spinner_size);
         Spinner spinnerCrust = v.findViewById(R.id.spinner_crust);
-        ArrayAdapter<String> sizeadapter = new ArrayAdapter<>(context, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,sizes);
-        ArrayAdapter<String> crustadapter = new ArrayAdapter<>(context, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,Crust);
+        ArrayAdapter<String> sizeadapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_dropdown_item,sizes);
+        ArrayAdapter<String> crustadapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_dropdown_item,Crust);
 
         spinnerSizes.setAdapter(sizeadapter);
         spinnerCrust.setAdapter(crustadapter);

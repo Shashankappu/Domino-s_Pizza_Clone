@@ -9,7 +9,7 @@
     android:padding="5dp">
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
         android:layout_height="280dp"
         app:cardElevation="10dp"
         android:layout_margin="10dp">
@@ -28,34 +28,38 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
                     android:src="@drawable/ic_baseline_favorite_border_24" />
+
                 <TextView
                     android:id="@+id/product_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="999"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginBottom="5dp"
-                    android:textColor="@color/white"
-                    android:layout_alignParentBottom="true"/>
+                    android:text="999"
+                    android:textColor="@color/white" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:textSize="10sp"
-                    android:layout_alignParentBottom="true"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
                     android:layout_marginRight="5dp"
-                    android:padding="5dp"
                     android:layout_marginBottom="5dp"
-                    android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
-                    android:textColor="@color/black"
                     android:backgroundTint="@color/white"
-                    android:text="Customise" />
+                    android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                    android:padding="5dp"
+                    android:text="Customise"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
             </RelativeLayout>
             <TextView
                 android:id="@+id/product_title"
